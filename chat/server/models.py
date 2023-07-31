@@ -19,7 +19,7 @@ class Server(models.Model):
     members = models.ManyToManyField(settings.AUTH_USER_MODEL)
     
     def __str__(self) -> str:
-        return self.name
+        return f"{self.name}-{self.id}"
     
     
 class Channel(models.Model):
