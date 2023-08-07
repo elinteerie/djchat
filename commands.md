@@ -1,0 +1,1 @@
+uvicorn chat.asgi:application
